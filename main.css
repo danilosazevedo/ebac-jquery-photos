@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1 {
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    background-color: rgb(88, 0, 160);
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid rgb(124, 24, 206);
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: rgba(128, 128, 128, 0.548);
+    text-align: center;
+    padding: 24px 0;
+    display: none;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(1, 136, 19);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cancel {
+    background-color: crimson;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /*Usado para quebrar as imagens ao chegar no final da tela*/
+}
+
+ul li {
+    max-width: 30%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-img-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-img-link a {
+color: #fff;
+text-decoration: none;
+}
+
+ul li:hover .overlay-img-link{
+    opacity: 1;
+}
